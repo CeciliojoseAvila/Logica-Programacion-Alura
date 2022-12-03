@@ -6,63 +6,58 @@
 
     function saltarLinea(argument) {
         // body...
-        document.write("<br><br><br>");
+        document.write("<br><br>");
     }
 
+//en una funcion puedo llamar otras funciones. Ejp:
     function imprimir(frase){
         document.write(frase)
+        saltarLinea();
     }
 
     var anho = 2022;
     var saltoLinea = "<br><br>"
-    imprimir("<h1>Sea bienvenido</h1>");
+    imprimir("<h1> Sea bienvenido</h1>");
    imprimir("La suma de las edades de Juan, Pedro y Carlos es... <br>"+ (20+25+15));
-    imprimir(saltoLinea);
-   
+     
     imprimir("El promedio de edad de Juan, Pedro y Carlos es... <br>");
 
 	imprimir((20+25+15)/3 );
-    alert((20+25+15)/3);
-   imprimir(saltoLinea);
+    alert((20+25+15)/3);   
    
-    imprimir("Juan nació en el año...");
-    imprimir(saltoLinea);
+    imprimir("Juan nació en el año...");    
 
     imprimir(2022-35);
-    imprimir(saltoLinea); 
+   
     imprimir("Juan tiene: "+ (anho-1987)+ " años");
 
-    document.write(saltoLinea);
-   
+     saltarLinea();
+
     imprimir("Pedro nació en el año...");
-    imprimir("<br>")
-    imprimir(2022-20);
-    imprimir(saltoLinea);
-   
+    
+    imprimir(2022-20);    
+
     imprimir("Pedro tiene: "+ (anho-2002)+ " años");
-    document.write(saltoLinea);   
 
     anho= 2020;
     imprimir("Carlos nació en el año...");
-    imprimir("<br>")
+    saltarLinea();
     imprimir(2022-42);
-
-    document.write(saltoLinea);
-   
-    imprimir(" Carlos tiene: "+ (anho-1980)+ " años");
 
     saltarLinea();
 
-    imprimir(" Romina tiene: " + (anho-1985)+ " años");
-    imprimir(saltoLinea);
+    //codigo para calcular la de edad Carlos, Romina, Roxana, y Alexandra.
    
+    imprimir(" Carlos tiene: "+ (anho-1980)+ " años");
+
+    imprimir(" Romina tiene: " + (anho-1985)+ " años");
+    
     imprimir("Roxana tiene: "+ (anho-1991)+ " años");
 
-    document.write(saltoLinea);
+    saltarLinea();
    
     imprimir("Alexandra tiene: "+ (anho-1991)+ " años");
-    document.write(saltoLinea);
-   
+    saltarLinea();   
 
     var edadRomina = 35;
     var edadRoxana = 29;
