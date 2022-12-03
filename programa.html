@@ -3,64 +3,76 @@
  Estoy definiendo la edad de Cecilio
  <br>
 <script type="text/javascript">
+
+    function saltarLinea(argument) {
+        // body...
+        document.write("<br><br><br>");
+    }
+
+    function imprimir(frase){
+        document.write(frase)
+    }
+
     var anho = 2022;
+    var saltoLinea = "<br><br>"
+    imprimir("<h1>Sea bienvenido</h1>");
+   imprimir("La suma de las edades de Juan, Pedro y Carlos es... <br>"+ (20+25+15));
+    imprimir(saltoLinea);
+   
+    imprimir("El promedio de edad de Juan, Pedro y Carlos es... <br>");
 
-    document.write("<h1>Sea bienvenido</h1>");
-    document.write("La suma de las edades de Juan, Pedro y Carlos es... <br>"+ (20+25+15));
-    document.write("<br>")
-    document.write("<br>")
-    document.write("El promedio de edad de Juan, Pedro y Carlos es... <br>");
-
-	document.write((20+25+15)/3 );
+	imprimir((20+25+15)/3 );
     alert((20+25+15)/3);
-    document.write("<br>")
-    document.write("<br>")
-    document.write("Juan nació en el año...");
-    document.write("<br>")    
-    document.write(2022-35);
-    document.write("<br>")
-    document.write("<br>")
-    document.write("Juan tiene: "+ (anho-1987)+ " años");
+   imprimir(saltoLinea);
+   
+    imprimir("Juan nació en el año...");
+    imprimir(saltoLinea);
 
-    document.write("<br>")
-    document.write("<br>")
-    document.write("Pedro nació en el año...");
-    document.write("<br>")
-    document.write(2022-20);
-    document.write("<br>")
-    document.write("<br>")
-    document.write("Pedro tiene: "+ (anho-2002)+ " años");
-    document.write("<br>")
-    document.write("<br>")
+    imprimir(2022-35);
+    imprimir(saltoLinea); 
+    imprimir("Juan tiene: "+ (anho-1987)+ " años");
+
+    document.write(saltoLinea);
+   
+    imprimir("Pedro nació en el año...");
+    imprimir("<br>")
+    imprimir(2022-20);
+    imprimir(saltoLinea);
+   
+    imprimir("Pedro tiene: "+ (anho-2002)+ " años");
+    document.write(saltoLinea);   
 
     anho= 2020;
-    document.write("Carlos nació en el año...");
-    document.write("<br>")
-    document.write(2022-42);
+    imprimir("Carlos nació en el año...");
+    imprimir("<br>")
+    imprimir(2022-42);
 
-    document.write("<br>")
-    document.write("<br>")
-    document.write("Carlos tiene: "+ (anho-1980)+ " años");
+    document.write(saltoLinea);
+   
+    imprimir(" Carlos tiene: "+ (anho-1980)+ " años");
 
-    document.write("<br>")
-    document.write("<br>")
+    saltarLinea();
 
+    imprimir(" Romina tiene: " + (anho-1985)+ " años");
+    imprimir(saltoLinea);
+   
+    imprimir("Roxana tiene: "+ (anho-1991)+ " años");
 
-    document.write("Romina tiene: "+ (anho-1985)+ " años");
+    document.write(saltoLinea);
+   
+    imprimir("Alexandra tiene: "+ (anho-1991)+ " años");
+    document.write(saltoLinea);
+   
 
-    document.write("<br>")
-    document.write("<br>")
-    document.write("Roxana tiene: "+ (anho-1991)+ " años");
-
-    document.write("<br>")
-    document.write("<br>")
-    document.write("Alexandra tiene: "+ (anho-1991)+ " años");
-    document.write("<br>")
-    document.write("<br>")
     var edadRomina = 35;
     var edadRoxana = 29;
     var edadAlexandra = 29;
+
+    var nombre1 = "Romina";
+    var nombre2 = "Roxana";
+    var nombre3 = "Alexandra";
+
     //promedio(edadRomina+edadRoxana+edadAlexandra)/3
     promedio = (50+45+39)/3
-    document.write("El promedio de las tres mujeres es: " + Math.round(promedio));
+   imprimir("El promedio de las edades de "+ nombre1 + ", " + nombre2 + ", " + " y " + nombre3 + " es: " + Math.round(promedio));
 </script>
