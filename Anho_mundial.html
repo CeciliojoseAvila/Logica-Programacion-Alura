@@ -1,0 +1,40 @@
+    <meta charset="utf-8">
+
+    <h2> PROGRAMA: CALCULAR LOS MUNDIALES DE FUTBOL DE FIFA </h2>
+    
+<script type="text/javascript">
+
+    function saltarLinea(argument) {
+        
+        document.write("<br><br>");
+    }
+
+    function imprimir(frase){
+
+        document.write(frase)
+        saltarLinea();
+    } 
+
+    var anhoMundialFifa = 1930;    
+    var limite = parseInt(prompt("Ingrese el año limite para calcular "))
+
+    while( anhoMundialFifa <= limite){
+
+    imprimir("Hubo mundial de la FIFA en el año " + anhoMundialFifa);
+    anhoMundialFifa = anhoMundialFifa + 4;
+
+    }
+    imprimir("FIN");
+    
+    //imprime en pantalla todos los mundiales hasta 2022
+    /*while( anhoMundialFifa <= 2022){
+
+    imprimir("Hubo mundial de la FIFA en el año " + anhoMundialFifa);
+    anhoMundialFifa = anhoMundialFifa + 4;
+
+    }
+    alert("FIN"); */
+
+
+   
+    </script>

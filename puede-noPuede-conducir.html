@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+ <h3> PROGRAMA: PUEDES O NO CONDUCIR </h3>
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br><br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var edad = parseInt(prompt("¿Cuál es tu edad?"));
+    var tieneLicencia = prompt("¿Tienes licencia? Responde si o no");
+
+
+    if( edad >= 18){
+
+        if( tieneLicencia == "si" ) {
+           imprimir("Puedes conducir");
+        }
+    }
+    if( edad < 18 ){
+
+         if( tieneLicencia == "si" ) {
+           imprimir("Aunque tengas Licencia No Puedes conducir porque eres menor de edad");
+        }
+        
+    }
+    
+
+</script>
