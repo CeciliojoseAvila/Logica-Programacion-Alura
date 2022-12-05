@@ -14,9 +14,65 @@
 
         document.write(frase)
         saltarLinea();
-    }    
-    var pesoCecilio = 70;
+    } 
+
+    function calcularIMC(peso, altura){
+        
+        imc = peso / (altura * altura);
+       
+        return imc;      
+       
+    }  
+    pesoInformado = prompt("informe su peso");
+    alturaInformada = prompt("informe su altura");
+    imcInformada = calcularIMC(pesoInformado, alturaInformada);
+    //var IMC_Cecilio = calcularIMC(70, 1.80);
+    //var IMC_Felipe = calcularIMC(90, 1.70);
+
+     imprimir("El IMC calculado es: " + imcInformada);
+     //imprimir("El promedio del IMC calculado de Gabriela y Luisa es: " + (calcularIMC(65, 1.55) + calcularIMC(63, 1.68)/2));
+    //calcularIMC(90, 1.70, " Felipe ");
+
+   /* var pesoCecilio = 70;
     var alturaCecilio =1.80;
     var IMC_Cecilio = pesoCecilio / (alturaCecilio * alturaCecilio);
-    
+    imcCecilio = calcularIMC(pesoCecilio, alturaCecilio);
+
+    imprimir("El IMC de Cecilio es: " + imcCecilio);
+
+    pesoFelipe = 90;
+    alturaFelipe = 1.70;
+    //IMC_Felipe = pesoFelipe / (alturaFelipe * alturaFelipe);
+    imcFelipe = calcularIMC(pesoFelipe, alturaFelipe);
+    imprimir("El IMC de Felipe es: " + imcFelipe);*/
+
+
+</script>
+
+
+
+<script>
+  /*  function saltarLinea() {
+
+        document.write("<br>");
+    }
+
+    function mostrar(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    function a(numero1, numero2) {
+        return numero1 + numero2;
+    }
+
+    function b(numero1, numero2) {
+        return numero1 / numero2;
+    }
+
+    var resultado = a(10,20) + b(30,2);
+
+    mostrar(resultado); */
+
+//el resultado será 45, porque la primera funcion suma 10+20=30 y la segunda divide 30/2=15 y al final sumamos 30+15 = 45
 </script>
