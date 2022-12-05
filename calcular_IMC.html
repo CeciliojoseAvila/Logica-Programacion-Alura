@@ -23,13 +23,15 @@
         return imc;      
        
     }  
-    pesoInformado = prompt("informe su peso");
-    alturaInformada = prompt("informe su altura");
+    nombre = prompt("informe su nombre y apellido");
+
+    pesoInformado = prompt( nombre + " informe su peso");
+    alturaInformada = prompt(nombre + " informe su altura");
     imcInformada = calcularIMC(pesoInformado, alturaInformada);
     //var IMC_Cecilio = calcularIMC(70, 1.80);
     //var IMC_Felipe = calcularIMC(90, 1.70);
 
-     imprimir("El IMC calculado es: " + imcInformada);
+     imprimir( nombre + " su IMC calculado es : " + imcInformada);
      //imprimir("El promedio del IMC calculado de Gabriela y Luisa es: " + (calcularIMC(65, 1.55) + calcularIMC(63, 1.68)/2));
     //calcularIMC(90, 1.70, " Felipe ");
 
