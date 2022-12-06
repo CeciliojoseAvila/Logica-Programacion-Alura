@@ -1,0 +1,40 @@
+ <meta charset="utf-8">
+
+    <h2> PROGRAMA: CALCULAR TABLA DE MULTIPLICAR </h2>
+    
+<script type="text/javascript">
+
+   function saltarLinea(argument) {
+       
+        document.write("<br><br>");
+    }
+
+//en una funcion puedo llamar otras funciones. Ejp:
+    function imprimir(frase){
+
+        document.write(frase)
+        saltarLinea();
+    } 
+
+
+   var multiplicador = 1;
+
+   imprimir("WHILE");
+
+   while(multiplicador <= 10){
+
+    imprimir( 5 * multiplicador);
+
+    multiplicador++ ;
+
+   }
+
+   imprimir("CICLO FOR");
+
+   for(multiplicador= 1; multiplicador <= 10; multiplicador++ ){
+
+    imprimir( 7 * multiplicador);
+     
+
+    }
+    </script>

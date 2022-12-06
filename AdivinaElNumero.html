@@ -5,27 +5,53 @@
 <script type="text/javascript">
 
     function saltarLinea(argument) {
-        // body...
+       
         document.write("<br><br>");
     }
 
-//en una funcion puedo llamar otras funciones. Ejp:
+
     function imprimir(frase){
 
         document.write(frase)
         saltarLinea();
     } 
 
- var numeroPensado = Math.round(Math.random()*10);
- var numeroLanzado = parseInt(prompt("Ingrese un numero entre 0 y 10 "));
+    var numeroPensado = Math.round(Math.random()*10);
+    var intentos = 3;
+    var contador = 1;
+     
+    while (contador <= intentos) {
 
- if(numeroPensado == numeroLanzado){
+        var numeroLanzado = parseInt(prompt("Ingrese un numero entre 0 y 10 "));
 
-    imprimir(" Usted acertó ");
- }else( numeroPensado != numeroLanzado ) {
+         if(numeroPensado == numeroLanzado){
 
-    imprimir("Usted falló, el numero Pensado era otro " + numeroPensado);
- }
+           // imprimir(" Usted acertó ");
+           alert(" Usted acertó en el intento " +  contador + " el numero Pensado era " + numeroPensado);
+           break;
 
+         }else {
+
+            //imprimir("Usted falló, el numero Pensado era otro " + numeroPensado);
+            alert("Usted falló, el numero Pensado era otro " );
+            
+         }
+         contador++;
+    }
+
+    if(numeroPensado == numeroLanzado){
+
+          imprimir(" Usted acertó en el intento " + contador + " el numero Pensado era " + numeroPensado);
+         }else {
+
+           
+           imprimir("Usted falló, el numero Pensado era " + numeroPensado);      
+
+    }
+
+    imprimir("FIN")
 
 </script>
+
+
+
