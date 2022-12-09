@@ -1,0 +1,78 @@
+<meta charset="UTF-8">
+
+<canvas width="600" height="400">
+	
+</canvas>
+
+
+<script>
+
+	function dibujarCuadros(x,y, color) {		
+
+	var pantalla = document.querySelector("canvas"); // la variable pantalla hace la conexion con querySelector del canvas con JS
+	var pincel = pantalla.getContext("2d");
+
+	//pincel.fillStyle = "red"; //fillStyle es una propiedad
+	pincel.fillStyle = color;
+	pincel.fillRect(x,y, 50,50);
+	pincel.strokeStyle = "black";
+
+	pincel.strokeRect(x,y, 50,50);
+	}
+
+	/*var x = 0;
+	while(x < 600){
+		dibujarCuadros(x,0, "yellow");
+		dibujarCuadros(x,50, "blue");
+		dibujarCuadros(x,100, "red");
+
+		x = x + 50;
+	}*/
+
+	//AHORA CON EL LOOP FOR
+	for (var x = 0; x < 600; x= x + 50) {
+		
+		dibujarCuadros(x,0, "yellow");
+		dibujarCuadros(x,50, "blue");
+		dibujarCuadros(x,100, "red");
+	}
+
+
+	/*dibujarCuadros(0,0, "green");
+	dibujarCuadros(50,0,"green");
+	dibujarCuadros(100,0, "green");*/
+	//comento todo esto para optimizar el codigo, en lugar de tres funciones, solo una
+	/*function dibujarCuadroAmarillo(x,y) {		
+
+	var pantalla = document.querySelector("canvas"); // la variable pantalla hace la conexion con querySelector del canvas con JS
+	var pincel = pantalla.getContext("2d");
+
+	pincel.fillStyle = "yellow"; //fillStyle es una propiedad
+	pincel.fillRect(x,y, 50,50);
+	pincel.strokeStyle = "black";
+
+	pincel.strokeRect(x,y, 50,50);
+	}
+		function dibujarCuadroVerde(x,y) {		
+
+	var pantalla = document.querySelector("canvas"); // la variable pantalla hace la conexion con querySelector del canvas con JS
+	var pincel = pantalla.getContext("2d");
+
+	pincel.fillStyle = "green"; //fillStyle es una propiedad
+	pincel.fillRect(x,y, 50,50);
+	pincel.strokeStyle = "black";
+
+	pincel.strokeRect(x,y, 50,50);
+	}
+
+	dibujarCuadroRojo(0,0);
+	dibujarCuadroAmarillo(0,50);
+	dibujarCuadroVerde(0,100);*/
+
+	/*//semaforo:
+	dibujarCuadros(0,0, "red");
+	dibujarCuadros(0,50,"yellow");
+	dibujarCuadros(0,100, "green");*/
+
+
+</script>

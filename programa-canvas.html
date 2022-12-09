@@ -12,5 +12,29 @@
 	var pantalla = document.querySelector("canvas"); // la variable pantalla hace la conexion con querySelector del canvas con JS
 	var pincel = pantalla.getContext("2d");
 
+	/*pincel.fillStyle = "lightgrey"; //fillStyle es una propiedad
+	pincel.fillRect(0,0, 600,400);//fillRect es una funcion*/ //si la comento sale franja color blanca
+	pincel.fillStyle = "lightgrey"; //fillStyle es una propiedad
+	pincel.fillRect(0,0, 600,400);
+
+	pincel.fillStyle = "green"; //fillStyle es una propiedad
+	pincel.fillRect(0,0, 200,400);//fillRect es una funcion
+
+	pincel.fillStyle = "red"; //fillStyle es una propiedad
+	pincel.fillRect(400, 0, 200,400);//fillRect es una funcion
+
+	//hacer triangulo
+	pincel.fillStyle = "yellow"; //fillStyle es una propiedad
+	pincel.beginPath();// Hacer una ruta
+	pincel.moveTo(300, 200);
+	pincel.lineTo(200,400);
+	pincel.lineTo(400, 400);
+	pincel.fill(); //realiza el llenado
+
+	//circunsferencia
+	pincel.fillStyle = "blue"; //fillStyle es una propiedad
+	pincel.beginPath();// Hacer una ruta
+	pincel.arc(300, 200, 50,0, 2*3.14); //arco	
+	pincel.fill(); //realiza el llenado
 
 </script>
